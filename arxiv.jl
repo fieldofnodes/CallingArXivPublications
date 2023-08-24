@@ -29,10 +29,18 @@ struct NoAbstract end
         return author
     end
 
+    function remove_next_line_title(title)
+        @chain title begin
+            replace(_, "\n "=>"")    
+        end
+    end
+    
+    
     function xml_entry_to_namedtuple(entry::XMLElement)
         df = DateFormat("y-m-d");
         link = get_content(entry,"id")
         title = get_content(entry,"title")
+        title = remove_next_line_title(title)
         date_pub = get_content(entry,"published")[1:10]
         abstract = get_content(entry,"summary")
         author = get_content(Authors(),entry,"author")
@@ -112,36 +120,39 @@ struct NoAbstract end
 
 
 
-function grab_latest_arxiv_output_xml_md()
-    output_dir = make_date_folder_for_data_output()
-    if !isdir(output_dir)
-        mkdir(output_dir)
+    function grab_latest_arxiv_output_xml_md()
+        output_dir = make_date_folder_for_data_output()
+        if !isdir(output_dir)
+            mkdir(output_dir)
+        end
+
+        file_name_prefix = string(output_dir,"/","publications")
+        xml_file = string(file_name_prefix,".xml")
+        md_file = string(file_name_prefix,".md")
+        filter_string = "Elham Kashefi"
+        url = "https://export.arxiv.org/api/query?search_query=au:Kashefi&start=0&sortBy=lastUpdatedDate&&max_results=500"
+        read_url = readchomp(`curl $(url)`)
+        open(xml_file,"w") do io
+            write(io,read_url)
+        end
+
+        xdoc = parse_file(xml_file)
+        xroot = root(xdoc)
+        entries = xroot["entry"]
+
+
+        @chain entries begin
+            xml_entry_to_namedtuple.(_)
+            sort(_, by = x->x.date_pub, rev = true)
+            [tuple_to_markdown(WithAbstract(), i) for i in _] 
+            filter(x-> occursin(filter_string,x),_)
+            append_to_file.(_,md_file)
+        end
     end
-
-    file_name_prefix = string(output_dir,"/","kashefi_publications")
-    xml_file = string(file_name_prefix,".xml")
-    md_file = string(file_name_prefix,".md")
-    filter_string = "Elham Kashefi"
-    url = "https://export.arxiv.org/api/query?search_query=au:Kashefi&start=0&sortBy=lastUpdatedDate&&max_results=500"
-    read_url = readchomp(`curl $(url)`)
-    open(xml_file,"w") do io
-        write(io,read_url)
-    end
-
-    xdoc = parse_file(xml_file)
-    xroot = root(xdoc)
-    entries = xroot["entry"]
-
-
-    @chain entries begin
-        xml_entry_to_namedtuple.(_)
-        sort(_, by = x->x.date_pub, rev = true)
-        [tuple_to_markdown(WithAbstract(), i) for i in _] 
-        filter(x-> occursin(filter_string,x),_)
-        append_to_file.(_,md_file)
-    end
-end
 
 // #end
 
 grab_latest_arxiv_output_xml_md()
+
+
+

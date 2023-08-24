@@ -3,13 +3,285 @@
   <link href="http://arxiv.org/api/query?search_query%3Dau%3AKashefi%26id_list%3D%26start%3D0%26max_results%3D500" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=au:Kashefi&amp;id_list=&amp;start=0&amp;max_results=500</title>
   <id>http://arxiv.org/api/lqjcUTS0dpSQZH7ZJpesvVfTMts</id>
-  <updated>2022-08-16T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">109</opensearch:totalResults>
+  <updated>2023-08-24T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">120</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">500</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2110.09469v3</id>
-    <updated>2022-08-02T16:01:54Z</updated>
+    <id>http://arxiv.org/abs/2203.03604v2</id>
+    <updated>2023-08-21T22:31:18Z</updated>
+    <published>2022-03-07T18:55:20Z</published>
+    <title>Differential Privacy Amplification in Quantum and Quantum-inspired
+  Algorithms</title>
+    <summary>  Differential privacy provides a theoretical framework for processing a
+dataset about $n$ users, in a way that the output reveals a minimal information
+about any single user. Such notion of privacy is usually ensured by
+noise-adding mechanisms and amplified by several processes, including
+subsampling, shuffling, iteration, mixing and diffusion. In this work, we
+provide privacy amplification bounds for quantum and quantum-inspired
+algorithms. In particular, we show for the first time, that algorithms running
+on quantum encoding of a classical dataset or the outcomes of quantum-inspired
+classical sampling, amplify differential privacy. Moreover, we prove that a
+quantum version of differential privacy is amplified by the composition of
+quantum channels, provided that they satisfy some mixing conditions.
+</summary>
+    <author>
+      <name>Armando Angrisani</name>
+    </author>
+    <author>
+      <name>Mina Doosti</name>
+    </author>
+    <author>
+      <name>Elham Kashefi</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">This article is superseded by arXiv:2307.04733</arxiv:comment>
+    <link href="http://arxiv.org/abs/2203.03604v2" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2203.03604v2" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2203.03591v2</id>
+    <updated>2023-08-21T22:25:13Z</updated>
+    <published>2022-03-07T18:38:02Z</published>
+    <title>Quantum Local Differential Privacy and Quantum Statistical Query Model</title>
+    <summary>  Quantum statistical queries provide a theoretical framework for investigating
+the computational power of a learner with limited quantum resources. This model
+is particularly relevant in the current context, where available quantum
+devices are subject to severe noise and have limited quantum memory. On the
+other hand, the framework of quantum differential privacy demonstrates that
+noise can, in some cases, benefit the computation, enhancing robustness and
+statistical security. In this work, we establish an equivalence between quantum
+statistical queries and quantum differential privacy in the local model,
+extending a celebrated classical result to the quantum setting. Furthermore, we
+derive strong data processing inequalities for the quantum relative entropy
+under local differential privacy and apply this result to the task of
+asymmetric hypothesis testing with restricted measurements. Finally, we
+consider the task of quantum multi-party computation under local differential
+privacy. As a proof of principle, we demonstrate that the parity function is
+efficiently learnable in this model, whereas the corresponding classical task
+requires exponentially many samples.
+</summary>
+    <author>
+      <name>Armando Angrisani</name>
+    </author>
+    <author>
+      <name>Elham Kashefi</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">This version significantly extends the previous one with new entropic
+  inequalities under local privacy, a private version of the quantum Stein's
+  Lemma and an application to private multi-party quantum computation</arxiv:comment>
+    <link href="http://arxiv.org/abs/2203.03591v2" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2203.03591v2" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2208.13434v3</id>
+    <updated>2023-08-11T12:29:13Z</updated>
+    <published>2022-08-29T09:09:43Z</published>
+    <title>Prediction of fluid flow in porous media by sparse observations and
+  physics-informed PointNet</title>
+    <summary>  We predict steady-state Stokes flow of fluids within porous media at pore
+scales using sparse point observations and a novel class of physics-informed
+neural networks, called "physics-informed PointNet" (PIPN). Taking the
+advantages of PIPN into account, three new features become available compared
+to physics-informed convolutional neural networks for porous medium
+applications. First, the input of PIPN is exclusively the pore spaces of porous
+media (rather than both the pore and grain spaces). This feature diminishes
+required computer memory. Second, PIPN represents the boundary of pore spaces
+smoothly and realistically (rather than pixel-wise representations). Third,
+spatial resolution can vary over the physical domain (rather than equally
+spaced resolutions). This feature enables users to reach an optimal resolution
+with a minimum computational cost. The performance of our framework is
+evaluated by the study of the influence of noisy sensor data, pressure
+observations, and spatial correlation length.
+</summary>
+    <author>
+      <name>Ali Kashefi</name>
+    </author>
+    <author>
+      <name>Tapan Mukerji</name>
+    </author>
+    <link href="http://arxiv.org/abs/2208.13434v3" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2208.13434v3" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.flu-dyn" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.flu-dyn" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.geo-ph" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2307.04733v1</id>
+    <updated>2023-07-10T17:44:03Z</updated>
+    <published>2023-07-10T17:44:03Z</published>
+    <title>A unifying framework for differentially private quantum algorithms</title>
+    <summary>  Differential privacy is a widely used notion of security that enables the
+processing of sensitive information. In short, differentially private
+algorithms map "neighbouring" inputs to close output distributions. Prior work
+proposed several quantum extensions of differential privacy, each of them built
+on substantially different notions of neighbouring quantum states. In this
+paper, we propose a novel and general definition of neighbouring quantum
+states. We demonstrate that this definition captures the underlying structure
+of quantum encodings and can be used to provide exponentially tighter privacy
+guarantees for quantum measurements. Our approach combines the addition of
+classical and quantum noise and is motivated by the noisy nature of near-term
+quantum devices. Moreover, we also investigate an alternative setting where we
+are provided with multiple copies of the input state. In this case,
+differential privacy can be ensured with little loss in accuracy combining
+concentration of measure and noise-adding mechanisms. En route, we prove the
+advanced joint convexity of the quantum hockey-stick divergence and we
+demonstrate how this result can be applied to quantum differential privacy.
+Finally, we complement our theoretical findings with an empirical estimation of
+the certified adversarial robustness ensured by differentially private
+measurements.
+</summary>
+    <author>
+      <name>Armando Angrisani</name>
+    </author>
+    <author>
+      <name>Mina Doosti</name>
+    </author>
+    <author>
+      <name>Elham Kashefi</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">This articles supersedes arXiv:2203.03604</arxiv:comment>
+    <link href="http://arxiv.org/abs/2307.04733v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2307.04733v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.IT" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2306.05195v1</id>
+    <updated>2023-06-08T13:50:02Z</updated>
+    <published>2023-06-08T13:50:02Z</published>
+    <title>Multi-client distributed blind quantum computation with the Qline
+  architecture</title>
+    <summary>  Universal blind quantum computing allows users with minimal quantum resources
+to delegate a quantum computation to a remote quantum server, while keeping
+intrinsically hidden input, algorithm, and outcome. State-of-art experimental
+demonstrations of such a protocol have only involved one client. However, an
+increasing number of multi-party algorithms, e.g. federated machine learning,
+require the collaboration of multiple clients to carry out a given joint
+computation. In this work, we propose and experimentally demonstrate a
+lightweight multi-client blind quantum computation protocol based on a novel
+linear quantum network configuration (Qline). Our protocol originality resides
+in three main strengths: scalability, since we eliminate the need for each
+client to have its own trusted source or measurement device, low-loss, by
+optimizing the orchestration of classical communication between each client and
+server through fast classical electronic control, and compatibility with
+distributed architectures while remaining intact even against correlated
+attacks of server nodes and malicious clients.
+</summary>
+    <author>
+      <name>Beatrice Polacchi</name>
+    </author>
+    <author>
+      <name>Dominik Leichtle</name>
+    </author>
+    <author>
+      <name>Leonardo Limongi</name>
+    </author>
+    <author>
+      <name>Gonzalo Carvacho</name>
+    </author>
+    <author>
+      <name>Giorgio Milani</name>
+    </author>
+    <author>
+      <name>Nicolò Spagnolo</name>
+    </author>
+    <author>
+      <name>Marc Kaplan</name>
+    </author>
+    <author>
+      <name>Fabio Sciarrino</name>
+    </author>
+    <author>
+      <name>Elham Kashefi</name>
+    </author>
+    <link href="http://arxiv.org/abs/2306.05195v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2306.05195v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2306.04351v1</id>
+    <updated>2023-06-07T11:35:21Z</updated>
+    <published>2023-06-07T11:35:21Z</published>
+    <title>Scalable and Exponential Quantum Error Mitigation of BQP Computations
+  using Verification</title>
+    <summary>  We present a scalable and modular error mitigation protocol for running
+$\mathsf{BQP}$ computations on a quantum computer with time-dependent noise.
+Utilising existing tools from quantum verification, our framework interleaves
+standard computation rounds alongside test rounds for error-detection and
+inherits a local-correctness guarantee which exponentially bounds (in the
+number of circuit runs) the probability that a returned classical output is
+correct. On top of the verification work, we introduce a post-selection
+technique we call basketing to address time-dependent noise behaviours and
+reduce overhead. The result is a first-of-its-kind error mitigation protocol
+which is exponentially effective and requires minimal noise assumptions, making
+it straightforwardly implementable on existing, NISQ devices and scalable to
+future, larger ones.
+</summary>
+    <author>
+      <name>Joseph Harris</name>
+    </author>
+    <author>
+      <name>Elham Kashefi</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">17 pages, 9 figures</arxiv:comment>
+    <link href="http://arxiv.org/abs/2306.04351v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2306.04351v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2303.02712v2</id>
+    <updated>2023-05-25T15:42:22Z</updated>
+    <published>2023-03-05T16:49:53Z</published>
+    <title>Simplifying errors by symmetry and randomisation</title>
+    <summary>  We present a set of methods to generate less complex error channels by
+quantum circuit parallelisation. The resulting errors are simplified as a
+consequence of their symmetrisation and randomisation. Initially, the case of a
+single error channel is analysed; these results are then generalised to
+multiple error channels. Error simplification for each method is shown to be
+either constant, linear, or exponential in terms of system size. Finally,
+example applications are provided, along with experiments run on
+superconducting quantum hardware and numerical simulation. These applications
+are: (1) reducing the sample complexity of matrix-inversion measurement error
+mitigation by error symmetrisation, (2) improving the effectiveness of
+noise-estimation circuit error mitigation by error randomisation, and (3)
+improving the predictability of noisy circuit performance by error
+randomisation.
+</summary>
+    <author>
+      <name>James Mills</name>
+    </author>
+    <author>
+      <name>Debasis Sadhukhan</name>
+    </author>
+    <author>
+      <name>Elham Kashefi</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">19 pages, 11 figures, additional numerics for time-dependent error
+  stabilisation, corrected typos, some restructuring</arxiv:comment>
+    <link href="http://arxiv.org/abs/2303.02712v2" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2303.02712v2" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2110.09469v4</id>
+    <updated>2023-05-12T17:48:06Z</updated>
     <published>2021-10-18T17:01:46Z</published>
     <title>Quantum Lock: A Provable Quantum Communication Advantage</title>
     <summary>  Physical unclonable functions(PUFs) provide a unique fingerprint to a
@@ -53,13 +325,511 @@ numerical simulation for construction which is ready for implementation.
     <author>
       <name>Elham Kashefi</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Replacement of paper "Hybrid PUF: A Novel Way to Enhance the Security
-  of Classical PUFs" (arXiv:2110.09469)</arxiv:comment>
-    <link href="http://arxiv.org/abs/2110.09469v3" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2110.09469v3" rel="related" type="application/pdf"/>
+    <arxiv:doi xmlns:arxiv="http://arxiv.org/schemas/atom">10.22331/q-2023-05-23-1014</arxiv:doi>
+    <link title="doi" href="http://dx.doi.org/10.22331/q-2023-05-23-1014" rel="related"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">47 pages, 13 figures</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Quantum 7, 1014 (2023)</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/2110.09469v4" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2110.09469v4" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
     <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2305.02936v1</id>
+    <updated>2023-05-04T15:36:35Z</updated>
+    <published>2023-05-04T15:36:35Z</published>
+    <title>Verifiable blind quantum computing with trapped ions and single photons</title>
+    <summary>  We present the first hybrid matter-photon implementation of verifiable blind
+quantum computing. We use a trapped-ion quantum server and a client-side
+photonic detection system connected by a fibre-optic quantum network link. The
+availability of memory qubits and deterministic quantum logic enables
+interactive protocols without post-selection - a requirement for any scalable
+blind quantum cloud server which previous realisations could not provide. Our
+apparatus supports guaranteed privacy with &lt;0.001 leaked bits per qubit and
+shows a clear path to fully verified quantum computing in the cloud.
+</summary>
+    <author>
+      <name>P. Drmota</name>
+    </author>
+    <author>
+      <name>D. P. Nadlinger</name>
+    </author>
+    <author>
+      <name>D. Main</name>
+    </author>
+    <author>
+      <name>B. C. Nichol</name>
+    </author>
+    <author>
+      <name>E. M. Ainley</name>
+    </author>
+    <author>
+      <name>D. Leichtle</name>
+    </author>
+    <author>
+      <name>A. Mantri</name>
+    </author>
+    <author>
+      <name>E. Kashefi</name>
+    </author>
+    <author>
+      <name>R. Srinivas</name>
+    </author>
+    <author>
+      <name>G. Araneda</name>
+    </author>
+    <author>
+      <name>C. J. Ballance</name>
+    </author>
+    <author>
+      <name>D. M. Lucas</name>
+    </author>
+    <link href="http://arxiv.org/abs/2305.02936v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2305.02936v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2303.12093v3</id>
+    <updated>2023-04-27T01:28:05Z</updated>
+    <published>2023-03-21T12:18:17Z</published>
+    <title>ChatGPT for Programming Numerical Methods</title>
+    <summary>  ChatGPT is a large language model recently released by the OpenAI company. In
+this technical report, we explore for the first time the capability of ChatGPT
+for programming numerical algorithms. Specifically, we examine the capability
+of GhatGPT for generating codes for numerical algorithms in different
+programming languages, for debugging and improving written codes by users, for
+completing missed parts of numerical codes, rewriting available codes in other
+programming languages, and for parallelizing serial codes. Additionally, we
+assess if ChatGPT can recognize if given codes are written by humans or
+machines. To reach this goal, we consider a variety of mathematical problems
+such as the Poisson equation, the diffusion equation, the incompressible
+Navier-Stokes equations, compressible inviscid flow, eigenvalue problems,
+solving linear systems of equations, storing sparse matrices, etc. Furthermore,
+we exemplify scientific machine learning such as physics-informed neural
+networks and convolutional neural networks with applications to computational
+physics. Through these examples, we investigate the successes, failures, and
+challenges of ChatGPT. Examples of failures are producing singular matrices,
+operations on arrays with incompatible sizes, programming interruption for
+relatively long codes, etc. Our outcomes suggest that ChatGPT can successfully
+program numerical algorithms in different programming languages, but certain
+limitations and challenges exist that require further improvement of this
+machine learning model.
+</summary>
+    <author>
+      <name>Ali Kashefi</name>
+    </author>
+    <author>
+      <name>Tapan Mukerji</name>
+    </author>
+    <link href="http://arxiv.org/abs/2303.12093v3" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2303.12093v3" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.NA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.NA" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2102.12949v3</id>
+    <updated>2023-04-17T13:11:58Z</updated>
+    <published>2021-02-25T15:58:09Z</published>
+    <title>Delegating Multi-Party Quantum Computations vs. Dishonest Majority in
+  Two Quantum Rounds</title>
+    <summary>  Multi-Party Quantum Computation (MPQC) has attracted a lot of attention as a
+potential killer-app for quantum networks through it's ability to preserve
+privacy and integrity of the highly valuable computations they would enable.
+Contributing to the latest challenges in this field, we present a composable
+protocol achieving blindness and verifiability even in the case of a single
+honest client. The security of our protocol is reduced, in an
+information-theoretically secure way, to that of a classical composable Secure
+Multi-Party Computation (SMPC) used to coordinate the various parties. Our
+scheme thus provides a statistically secure upgrade of such classical scheme to
+a quantum one with the same level of security.
+  In addition, (i) the clients can delegate their computation to a powerful
+fully fault-tolerant server and only need to perform single qubit operations to
+unlock the full potential of multi-party quantum computation; (ii) the amount
+of quantum communication with the server is reduced to sending quantum states
+at the beginning of the computation and receiving the output states at the end,
+which is optimal and removes the need for interactive quantum communication;
+and (iii) it has a low constant multiplicative qubit overhead compared to the
+single-client delegated protocol it is built upon.
+  The main technical ingredient of our paper is the bootstraping of the MPQC
+construction by Double Blind Quantum Computation, a new composable resource for
+blind multiparty quantum computation, that demonstrates the surprising fact
+that the full protocol does not require verifiability of all components to
+achieve security.
+</summary>
+    <author>
+      <name>Theodoros Kapourniotis</name>
+    </author>
+    <author>
+      <name>Elham Kashefi</name>
+    </author>
+    <author>
+      <name>Luka Music</name>
+    </author>
+    <author>
+      <name>Harold Ollivier</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">The proposed H/I-gadget (sec 5.1.2) turned out being insecure because
+  the corrections to apply to the output state depended on the outcome and the
+  desired operation (fig.6). This construction is now superseded by "Asymmetric
+  Quantum Secure Multi-Party Computation With Weak Clients Against Dishonest
+  Majority" (arxiv:2303.08865)</arxiv:comment>
+    <link href="http://arxiv.org/abs/2102.12949v3" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2102.12949v3" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2304.01881v1</id>
+    <updated>2023-04-04T15:35:23Z</updated>
+    <published>2023-04-04T15:35:23Z</published>
+    <title>Establishing shared secret keys on quantum line networks: protocol and
+  security</title>
+    <summary>  We show the security of multi-user key establishment on a single line of
+quantum communication. More precisely, we consider a quantum communication
+architecture where the qubit generation and measurement happen at the two ends
+of the line, whilst intermediate parties are limited to single-qubit unitary
+transforms. This network topology has been previously introduced to implement
+quantum-assisted secret-sharing protocols for classical data, as well as the
+key establishment, and secure computing. This architecture has numerous
+advantages. The intermediate nodes are only using simplified hardware, which
+makes them easier to implement. Moreover, key establishment between arbitrary
+pairs of parties in the network does not require key routing through
+intermediate nodes. This is in contrast with quantum key distribution (QKD)
+networks for which non-adjacent nodes need intermediate ones to route keys,
+thereby revealing these keys to intermediate parties and consuming previously
+established ones to secure the routing process. Our main result is to show the
+security of key establishment on quantum line networks. We show the security
+using the framework of abstract cryptography. This immediately makes the
+security composable, showing that the keys can be used for encryption or other
+tasks.
+</summary>
+    <author>
+      <name>Mina Doosti</name>
+    </author>
+    <author>
+      <name>Lucas Hanouz</name>
+    </author>
+    <author>
+      <name>Anne Marin</name>
+    </author>
+    <author>
+      <name>Elham Kashefi</name>
+    </author>
+    <author>
+      <name>Marc Kaplan</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">23 pages, 4 figures, comments are welcome</arxiv:comment>
+    <link href="http://arxiv.org/abs/2304.01881v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2304.01881v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2303.13634v2</id>
+    <updated>2023-04-03T14:50:13Z</updated>
+    <published>2023-03-22T06:49:34Z</published>
+    <title>Physics-informed PointNet: On how many irregular geometries can it solve
+  an inverse problem simultaneously? Application to linear elasticity</title>
+    <summary>  Regular physics-informed neural networks (PINNs) predict the solution of
+partial differential equations using sparse labeled data but only over a single
+domain. On the other hand, fully supervised learning models are first trained
+usually over a few thousand domains with known solutions (i.e., labeled data)
+and then predict the solution over a few hundred unseen domains.
+Physics-informed PointNet (PIPN) is primarily designed to fill this gap between
+PINNs (as weakly supervised learning models) and fully supervised learning
+models. In this article, we demonstrate that PIPN predicts the solution of
+desired partial differential equations over a few hundred domains
+simultaneously, while it only uses sparse labeled data. This framework benefits
+fast geometric designs in the industry when only sparse labeled data are
+available. Particularly, we show that PIPN predicts the solution of a plane
+stress problem over more than 500 domains with different geometries,
+simultaneously. Moreover, we pioneer implementing the concept of remarkable
+batch size (i.e., the number of geometries fed into PIPN at each sub-epoch)
+into PIPN. Specifically, we try batch sizes of 7, 14, 19, 38, 76, and 133.
+Additionally, the effect of the PIPN size, symmetric function in the PIPN
+architecture, and static and dynamic weights for the component of the sparse
+labeled data in the loss function are investigated.
+</summary>
+    <author>
+      <name>Ali Kashefi</name>
+    </author>
+    <author>
+      <name>Leonidas J. Guibas</name>
+    </author>
+    <author>
+      <name>Tapan Mukerji</name>
+    </author>
+    <link href="http://arxiv.org/abs/2303.13634v2" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2303.13634v2" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CE" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2303.08865v1</id>
+    <updated>2023-03-15T18:33:18Z</updated>
+    <published>2023-03-15T18:33:18Z</published>
+    <title>Asymmetric Quantum Secure Multi-Party Computation With Weak Clients
+  Against Dishonest Majority</title>
+    <summary>  Secure multi-party computation (SMPC) protocols allow several parties that
+distrust each other to collectively compute a function on their inputs. In this
+paper, we introduce a protocol that lifts classical SMPC to quantum SMPC in a
+composably and statistically secure way, even for a single honest party. Unlike
+previous quantum SMPC protocols, our proposal only requires very limited
+quantum resources from all but one party; it suffices that the weak parties,
+i.e. the clients, are able to prepare single-qubit states in the X-Y plane. The
+novel quantum SMPC protocol is constructed in a naturally modular way, and
+relies on a new technique for quantum verification that is of independent
+interest. This verification technique requires the remote preparation of states
+only in a single plane of the Bloch sphere. In the course of proving the
+security of the new verification protocol, we also uncover a fundamental
+invariance that is inherent to measurement-based quantum computing.
+</summary>
+    <author>
+      <name>Theodoros Kapourniotis</name>
+    </author>
+    <author>
+      <name>Elham Kashefi</name>
+    </author>
+    <author>
+      <name>Dominik Leichtle</name>
+    </author>
+    <author>
+      <name>Luka Music</name>
+    </author>
+    <author>
+      <name>Harold Ollivier</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">27+10 pages, 5 figures. This work supersedes arXiv:2102.12949</arxiv:comment>
+    <link href="http://arxiv.org/abs/2303.08865v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2303.08865v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2104.04742v3</id>
+    <updated>2023-01-17T12:36:47Z</updated>
+    <published>2021-04-10T11:34:40Z</published>
+    <title>Non-Destructive Zero-Knowledge Proofs on Quantum States, and Multi-Party
+  Generation of Authorized Hidden GHZ States</title>
+    <summary>  We propose the first generalization of the famous Non-Interactive
+Zero-Knowledge (NIZK) proofs to quantum languages (NIZKoQS) and we provide a
+protocol to prove advanced properties on a received quantum state
+non-destructively and non-interactively (a single message being sent from the
+prover to the verifier).
+  In our second orthogonal contribution, we improve the costly Remote State
+Preparation protocols [CCKW18,CCKW19,GV19] that can classically fake a quantum
+channel (this is at the heart of our NIZKoQS protocol) by showing how to create
+a multi-qubits state from a single superposition.
+  Finally, we generalize these results to a multi-party setting and prove that
+multiple parties can anonymously distribute a GHZ state in such a way that only
+participants knowing a secret credential can share this state, which could have
+applications to quantum anonymous transmission, quantum secret sharing, quantum
+onion routing and more.
+</summary>
+    <author>
+      <name>Léo Colisson</name>
+    </author>
+    <author>
+      <name>Frédéric Grosshans</name>
+    </author>
+    <author>
+      <name>Elham Kashefi</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">59 pages, added a precise definition &amp; proof of NIZKoQS</arxiv:comment>
+    <link href="http://arxiv.org/abs/2104.04742v3" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2104.04742v3" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2111.03016v3</id>
+    <updated>2022-11-15T13:14:31Z</updated>
+    <published>2021-11-04T17:19:08Z</published>
+    <title>Graph neural network initialisation of quantum approximate optimisation</title>
+    <summary>  Approximate combinatorial optimisation has emerged as one of the most
+promising application areas for quantum computers, particularly those in the
+near term. In this work, we focus on the quantum approximate optimisation
+algorithm (QAOA) for solving the MaxCut problem. Specifically, we address two
+problems in the QAOA, how to initialise the algorithm, and how to subsequently
+train the parameters to find an optimal solution. For the former, we propose
+graph neural networks (GNNs) as a warm-starting technique for QAOA. We
+demonstrate that merging GNNs with QAOA can outperform both approaches
+individually. Furthermore, we demonstrate how graph neural networks enables
+warm-start generalisation across not only graph instances, but also to
+increasing graph sizes, a feature not straightforwardly available to other
+warm-starting methods. For training the QAOA, we test several optimisers for
+the MaxCut problem up to 16 qubits and benchmark against vanilla gradient
+descent. These include quantum aware/agnostic and machine learning based/neural
+optimisers. Examples of the latter include reinforcement and meta-learning.
+With the incorporation of these initialisation and optimisation toolkits, we
+demonstrate how the optimisation problems can be solved using QAOA in an
+end-to-end differentiable pipeline.
+</summary>
+    <author>
+      <name>Nishant Jain</name>
+    </author>
+    <author>
+      <name>Brian Coyle</name>
+    </author>
+    <author>
+      <name>Elham Kashefi</name>
+    </author>
+    <author>
+      <name>Niraj Kumar</name>
+    </author>
+    <arxiv:doi xmlns:arxiv="http://arxiv.org/schemas/atom">10.22331/q-2022-11-17-861</arxiv:doi>
+    <link title="doi" href="http://dx.doi.org/10.22331/q-2022-11-17-861" rel="related"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">12 pages, 8 Figures - publised version</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Quantum 6, 861 (2022)</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/2111.03016v3" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2111.03016v3" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2202.05476v2</id>
+    <updated>2022-10-27T07:04:47Z</updated>
+    <published>2022-02-11T06:36:33Z</published>
+    <title>Physics-informed PointNet: A deep learning solver for steady-state
+  incompressible flows and thermal fields on multiple sets of irregular
+  geometries</title>
+    <summary>  We present a novel physics-informed deep learning framework for solving
+steady-state incompressible flow on multiple sets of irregular geometries by
+incorporating two main elements: using a point-cloud based neural network to
+capture geometric features of computational domains, and using the mean squared
+residuals of the governing partial differential equations, boundary conditions,
+and sparse observations as the loss function of the network to capture the
+physics. While the solution of the continuity and Navier-Stokes equations is a
+function of the geometry of the computational domain, current versions of
+physics-informed neural networks have no mechanism to express this functionally
+in their outputs, and thus are restricted to obtain the solutions only for one
+computational domain with each training procedure. Using the proposed
+framework, three new facilities become available. First, the governing
+equations are solvable on a set of computational domains containing irregular
+geometries with high variations with respect to each other but requiring
+training only once. Second, after training the introduced framework on the set,
+it is now able to predict the solutions on domains with unseen geometries from
+seen and unseen categories as well. The former and the latter both lead to
+savings in computational costs. Finally, all the advantages of the point-cloud
+based neural network for irregular geometries, already used for supervised
+learning, are transferred to the proposed physics-informed framework. The
+effectiveness of our framework is shown through the method of manufactured
+solutions and thermally-driven flow for forward and inverse problems.
+</summary>
+    <author>
+      <name>Ali Kashefi</name>
+    </author>
+    <author>
+      <name>Tapan Mukerji</name>
+    </author>
+    <arxiv:doi xmlns:arxiv="http://arxiv.org/schemas/atom">10.1016/j.jcp.2022.111510</arxiv:doi>
+    <link title="doi" href="http://dx.doi.org/10.1016/j.jcp.2022.111510" rel="related"/>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Journal of Computational Physics, volume 468, 2022</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/2202.05476v2" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2202.05476v2" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.flu-dyn" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.flu-dyn" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.comp-ph" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2210.13200v1</id>
+    <updated>2022-10-24T13:23:36Z</updated>
+    <published>2022-10-24T13:23:36Z</published>
+    <title>Classically Approximating Variational Quantum Machine Learning with
+  Random Fourier Features</title>
+    <summary>  Many applications of quantum computing in the near term rely on variational
+quantum circuits (VQCs). They have been showcased as a promising model for
+reaching a quantum advantage in machine learning with current noisy
+intermediate scale quantum computers (NISQ). It is often believed that the
+power of VQCs relies on their exponentially large feature space, and extensive
+works have explored the expressiveness and trainability of VQCs in that regard.
+In our work, we propose a classical sampling method that may closely
+approximate a VQC with Hamiltonian encoding, given only the description of its
+architecture. It uses the seminal proposal of Random Fourier Features (RFF) and
+the fact that VQCs can be seen as large Fourier series. We provide general
+theoretical bounds for classically approximating models built from
+exponentially large quantum feature space by sampling a few frequencies to
+build an equivalent low dimensional kernel, and we show experimentally that
+this approximation is efficient for several encoding strategies. Precisely, we
+show that the number of required samples grows favorably with the size of the
+quantum spectrum. This tool therefore questions the hope for quantum advantage
+from VQCs in many cases, but conversely helps to narrow the conditions for
+their potential success. We expect VQCs with various and complex encoding
+Hamiltonians, or with large input dimension, to become more robust to classical
+approximations.
+</summary>
+    <author>
+      <name>Jonas Landman</name>
+    </author>
+    <author>
+      <name>Slimane Thabet</name>
+    </author>
+    <author>
+      <name>Constantin Dalyac</name>
+    </author>
+    <author>
+      <name>Hela Mhiri</name>
+    </author>
+    <author>
+      <name>Elham Kashefi</name>
+    </author>
+    <link href="http://arxiv.org/abs/2210.13200v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2210.13200v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2206.00631v2</id>
+    <updated>2022-09-30T18:00:22Z</updated>
+    <published>2022-06-01T17:03:07Z</published>
+    <title>Unifying Quantum Verification and Error-Detection: Theory and Tools for
+  Optimisations</title>
+    <summary>  With the recent availability of cloud quantum computing services, the
+question of verifying quantum computations delegated by a client to a quantum
+server is becoming of practical interest. While Verifiable Blind Quantum
+Computing (VBQC) has emerged as one of the key approaches to address this
+challenge, current protocols still need to be optimised before they are truly
+practical.
+  To this end, we establish a fundamental correspondence between
+error-detection and verification and provide sufficient conditions to both
+achieve security in the Abstract Cryptography framework and optimise resource
+overheads of all known VBQC-based protocols. As a direct application, we
+demonstrate how to systematise the search for new efficient and robust
+verification protocols for $\mathsf{BQP}$ computations. While we have chosen
+Measurement-Based Quantum Computing (MBQC) as the working model for the
+presentation of our results, one could expand the domain of applicability of
+our framework via direct known translation between the circuit model and MBQC.
+</summary>
+    <author>
+      <name>Theodoros Kapourniotis</name>
+    </author>
+    <author>
+      <name>Elham Kashefi</name>
+    </author>
+    <author>
+      <name>Dominik Leichtle</name>
+    </author>
+    <author>
+      <name>Luka Music</name>
+    </author>
+    <author>
+      <name>Harold Ollivier</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">45 pages, 9 figures</arxiv:comment>
+    <link href="http://arxiv.org/abs/2206.00631v2" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2206.00631v2" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
     <id>http://arxiv.org/abs/2111.02527v2</id>
@@ -163,59 +933,6 @@ a training source and benchmark.
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2206.00631v1</id>
-    <updated>2022-06-01T17:03:07Z</updated>
-    <published>2022-06-01T17:03:07Z</published>
-    <title>A Framework for Verifiable Blind Quantum Computation</title>
-    <summary>  With the recent availability of cloud quantum computing services, the
-question of the verifiability of quantum computations delegated by a weak
-quantum client to a powerful quantum server is becoming of practical interest.
-Over the last two decades, Verifiable Blind Quantum Computing (VBQC) has
-emerged as one of the key approaches to address this challenge. While many
-protocols have been proposed in recent years, each optimising one aspect of
-such schemes, a systematic study of required building blocks to achieve
-collectively the desired properties has been missing. We present a framework
-that encompasses all known VBQC protocols and present sufficient conditions to
-obtain composable security and noise robustness properties. We do this by
-providing a unified security proof within the Abstract Cryptography formalism
-that can be used for existing protocols as well as new ones that could be
-derived using the framework. While we choose Measurement-Based Quantum
-Computing (MBQC) as the working model for the presentation of our results, one
-could expand the domain of applicability of our framework via direct known
-translation between the circuit model and MBQC.
-  On a theoretical note, we uncover fundamental relations between verification
-and error detection and correction, a folklore belief in the field that has
-never been mathematically proven: (i) verification can be reduced to the task
-of error detection, and (ii) encoding of the target computation into an
-error-correcting code is necessary for exponential soundness. These simple yet
-fundamental facts set the design principles for further development towards
-practical VBQC protocols. Indeed, as a direct application we demonstrate how
-the framework can systematize the search for new verification techniques. We
-find completely new schemes that allow more efficient robust verification of
-BQP computations than current state of the art.
-</summary>
-    <author>
-      <name>Theodoros Kapourniotis</name>
-    </author>
-    <author>
-      <name>Elham Kashefi</name>
-    </author>
-    <author>
-      <name>Dominik Leichtle</name>
-    </author>
-    <author>
-      <name>Luka Music</name>
-    </author>
-    <author>
-      <name>Harold Ollivier</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">31+2 pages, 0 figures</arxiv:comment>
-    <link href="http://arxiv.org/abs/2206.00631v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2206.00631v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
     <id>http://arxiv.org/abs/2109.14329v3</id>
@@ -360,113 +1077,6 @@ requirements of the protocol.
     <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2203.03604v1</id>
-    <updated>2022-03-07T18:55:20Z</updated>
-    <published>2022-03-07T18:55:20Z</published>
-    <title>Differential Privacy Amplification in Quantum and Quantum-inspired
-  Algorithms</title>
-    <summary>  Differential privacy provides a theoretical framework for processing a
-dataset about $n$ users, in a way that the output reveals a minimal information
-about any single user. Such notion of privacy is usually ensured by
-noise-adding mechanisms and amplified by several processes, including
-subsampling, shuffling, iteration, mixing and diffusion. In this work, we
-provide privacy amplification bounds for quantum and quantum-inspired
-algorithms. In particular, we show for the first time, that algorithms running
-on quantum encoding of a classical dataset or the outcomes of quantum-inspired
-classical sampling, amplify differential privacy. Moreover, we prove that a
-quantum version of differential privacy is amplified by the composition of
-quantum channels, provided that they satisfy some mixing conditions.
-</summary>
-    <author>
-      <name>Armando Angrisani</name>
-    </author>
-    <author>
-      <name>Mina Doosti</name>
-    </author>
-    <author>
-      <name>Elham Kashefi</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">16 pages</arxiv:comment>
-    <link href="http://arxiv.org/abs/2203.03604v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2203.03604v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2203.03591v1</id>
-    <updated>2022-03-07T18:38:02Z</updated>
-    <published>2022-03-07T18:38:02Z</published>
-    <title>Quantum Local Differential Privacy and Quantum Statistical Query Model</title>
-    <summary>  The problem of private learning has been extensively studied in classical
-computer science. Notably, a striking equivalence between local differentially
-private learning and statistical query learning has been shown. In addition,
-the statistical query model has been recently extended to quantum computation.
-In this work, we give a formal definition of quantum local differential privacy
-and we extend the aforementioned result to quantum computation.
-</summary>
-    <author>
-      <name>Armando Angrisani</name>
-    </author>
-    <author>
-      <name>Elham Kashefi</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">10 pages, presented at Theory and Practice of Differential Privacy,
-  2021 (TPDP '21) and at Quantum Techniques in Machine Learning, 2021 (QTML
-  '21)</arxiv:comment>
-    <link href="http://arxiv.org/abs/2203.03591v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2203.03591v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2202.05476v1</id>
-    <updated>2022-02-11T06:36:33Z</updated>
-    <published>2022-02-11T06:36:33Z</published>
-    <title>Physics-Informed PointNet: A Deep Learning Solver for Steady-State
-  Incompressible Flows and Thermal Fields on Multiple Sets of Irregular
-  Geometries</title>
-    <summary>  We present a novel physics-informed deep learning framework for solving
-steady-state incompressible flow on multiple sets of irregular geometries by
-incorporating two main elements: using a point-cloud based neural network to
-capture geometric features of computational domains, and using the mean squared
-residuals of the governing partial differential equations, boundary conditions,
-and sparse observations as the loss function of the network to capture the
-physics. While the solution of the continuity and Navier-Stokes equations is a
-function of the geometry of the computational domain, current versions of
-physics-informed neural networks have no mechanism to express this functionally
-in their outputs, and thus are restricted to obtain the solutions only for one
-computational domain with each training procedure. Using the proposed
-framework, three new facilities become available. First, the governing
-equations are solvable on a set of computational domains containing irregular
-geometries with high variations with respect to each other but requiring
-training only once. Second, after training the introduced framework on the set,
-it is now able to predict the solutions on domains with unseen geometries from
-seen and unseen categories as well. The former and the latter both lead to
-savings in computational costs. Finally, all the advantages of the point-cloud
-based neural network for irregular geometries, already used for supervised
-learning, are transferred to the proposed physics-informed framework. The
-effectiveness of our framework is shown through the method of manufactured
-solutions and thermally-driven flow for forward and inverse problems.
-</summary>
-    <author>
-      <name>Ali Kashefi</name>
-    </author>
-    <author>
-      <name>Tapan Mukerji</name>
-    </author>
-    <link href="http://arxiv.org/abs/2202.05476v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2202.05476v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.flu-dyn" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="physics.flu-dyn" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="physics.comp-ph" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
     <id>http://arxiv.org/abs/2101.01762v2</id>
     <updated>2022-01-04T18:37:37Z</updated>
     <published>2021-01-05T19:54:35Z</published>
@@ -577,47 +1187,6 @@ of intractable continuous-variable multimode quantum states.
     <link title="pdf" href="http://arxiv.org/pdf/2006.03520v5" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
     <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2111.03016v1</id>
-    <updated>2021-11-04T17:19:08Z</updated>
-    <published>2021-11-04T17:19:08Z</published>
-    <title>Graph neural network initialisation of quantum approximate optimisation</title>
-    <summary>  Approximate combinatorial optimisation has emerged as one of the most
-promising application areas for quantum computers, particularly those in the
-near term. In this work, we focus on the quantum approximate optimisation
-algorithm (QAOA) for solving the Max-Cut problem. Specifically, we address two
-problems in the QAOA, how to select initial parameters, and how to subsequently
-train the parameters to find an optimal solution. For the former, we propose
-graph neural networks (GNNs) as an initialisation routine for the QAOA
-parameters, adding to the literature on warm-starting techniques. We show the
-GNN approach generalises across not only graph instances, but also to
-increasing graph sizes, a feature not available to other warm-starting
-techniques. For training the QAOA, we test several optimisers for the MaxCut
-problem. These include quantum aware/agnostic optimisers proposed in literature
-and we also incorporate machine learning techniques such as reinforcement and
-meta-learning. With the incorporation of these initialisation and optimisation
-toolkits, we demonstrate how the QAOA can be trained as an end-to-end
-differentiable pipeline.
-</summary>
-    <author>
-      <name>Nishant Jain</name>
-    </author>
-    <author>
-      <name>Brian Coyle</name>
-    </author>
-    <author>
-      <name>Elham Kashefi</name>
-    </author>
-    <author>
-      <name>Niraj Kumar</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">12 pages, 8 Figures</arxiv:comment>
-    <link href="http://arxiv.org/abs/2111.03016v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2111.03016v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
     <id>http://arxiv.org/abs/2006.04522v2</id>
@@ -755,6 +1324,8 @@ without generating or measuring them.
     <author>
       <name>Marc Kaplan</name>
     </author>
+    <arxiv:doi xmlns:arxiv="http://arxiv.org/schemas/atom">10.1038/s41534-022-00612-5</arxiv:doi>
+    <link title="doi" href="http://dx.doi.org/10.1038/s41534-022-00612-5" rel="related"/>
     <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">25 pages, 5 figures</arxiv:comment>
     <link href="http://arxiv.org/abs/2109.02952v3" rel="alternate" type="text/html"/>
     <link title="pdf" href="http://arxiv.org/pdf/2109.02952v3" rel="related" type="application/pdf"/>
@@ -895,54 +1466,6 @@ tolerate a constant amount of global noise.
   and refines the discussion on applicability</arxiv:comment>
     <link href="http://arxiv.org/abs/2109.04042v1" rel="alternate" type="text/html"/>
     <link title="pdf" href="http://arxiv.org/pdf/2109.04042v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2102.12949v2</id>
-    <updated>2021-09-09T05:01:11Z</updated>
-    <published>2021-02-25T15:58:09Z</published>
-    <title>Delegating Multi-Party Quantum Computations vs. Dishonest Majority in
-  Two Quantum Rounds</title>
-    <summary>  Multi-Party Quantum Computation (MPQC) has attracted a lot of attention as a
-potential killer-app for quantum networks through it's ability to preserve
-privacy and integrity of the highly valuable computations they would enable.
-Contributing to the latest challenges in this field, we present a composable
-protocol achieving blindness and verifiability even in the case of a single
-honest client. The security of our protocol is reduced, in an
-information-theoretically secure way, to that of a classical composable Secure
-Multi-Party Computation (SMPC) used to coordinate the various parties. Our
-scheme thus provides a statistically secure upgrade of such classical scheme to
-a quantum one with the same level of security.
-  In addition, (i) the clients can delegate their computation to a powerful
-fully fault-tolerant server and only need to perform single qubit operations to
-unlock the full potential of multi-party quantum computation; (ii) the amount
-of quantum communication with the server is reduced to sending quantum states
-at the beginning of the computation and receiving the output states at the end,
-which is optimal and removes the need for interactive quantum communication;
-and (iii) it has a low constant multiplicative qubit overhead compared to the
-single-client delegated protocol it is built upon.
-  The main technical ingredient of our paper is the bootstraping of the MPQC
-construction by Double Blind Quantum Computation, a new composable resource for
-blind multiparty quantum computation, that demonstrates the surprising fact
-that the full protocol does not require verifiability of all components to
-achieve security.
-</summary>
-    <author>
-      <name>Theodoros Kapourniotis</name>
-    </author>
-    <author>
-      <name>Elham Kashefi</name>
-    </author>
-    <author>
-      <name>Luka Music</name>
-    </author>
-    <author>
-      <name>Harold Ollivier</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">30+28 pages, 11 figs. Improved clarity, results unchanged</arxiv:comment>
-    <link href="http://arxiv.org/abs/2102.12949v2" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2102.12949v2" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
     <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
@@ -1186,54 +1709,6 @@ output data only.
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2104.04742v2</id>
-    <updated>2021-04-13T07:17:27Z</updated>
-    <published>2021-04-10T11:34:40Z</published>
-    <title>Non-Destructive Zero-Knowledge Proofs on Quantum States, and Multi-Party
-  Generation of Authorized Hidden GHZ States</title>
-    <summary>  Due to the special no-cloning principle, quantum states appear to be very
-useful in cryptography. But this very same property also has drawbacks: when
-receiving a quantum state, it is nearly impossible for the receiver to
-efficiently check non-trivial properties on that state without destroying it.
-  In this work, we initiate the study of Non-Destructive Zero-Knowledge Proofs
-on Quantum States. Our method binds a quantum state to a classical encryption
-of that quantum state. That way, the receiver can obtain guarantees on the
-quantum state by asking to the sender to prove properties directly on the
-classical encryption. This method is therefore non-destructive, and it is
-possible to verify a very large class of properties. For instance, we can force
-the sender to send different categories of states depending on whether they
-know a classical password or not. Moreover, we can also provide guarantees to
-the sender: for example, we can ensure that the receiver will never learn
-whether the sender knows the password or not.
-  We also extend this method to the multi-party setting. We show how it can
-prove useful to distribute a GHZ state between different parties, in such a way
-that only parties knowing a secret can be part of this GHZ. Moreover, the
-identity of the parties that are part of the GHZ remains hidden to any
-malicious party. A direct application would be to allow a server to create a
-secret sharing of a qubit between unknown parties, authorized for example by a
-third party Certification Authority.
-  Finally, we provide simpler "blind" versions of the protocols that could
-prove useful in Anonymous Transmission or Quantum Onion Routing, and we
-explicit a cryptographic function required in our protocols based on the
-Learning With Errors hardness problem.
-</summary>
-    <author>
-      <name>Léo Colisson</name>
-    </author>
-    <author>
-      <name>Frédéric Grosshans</name>
-    </author>
-    <author>
-      <name>Elham Kashefi</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">50 pages</arxiv:comment>
-    <link href="http://arxiv.org/abs/2104.04742v2" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2104.04742v2" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
     <id>http://arxiv.org/abs/2102.13044v1</id>
     <updated>2021-02-25T17:54:47Z</updated>
     <published>2021-02-25T17:54:47Z</published>
@@ -1402,7 +1877,10 @@ distributions, including in the presence of noise.
     <author>
       <name>Elham Kashefi</name>
     </author>
+    <arxiv:doi xmlns:arxiv="http://arxiv.org/schemas/atom">10.1007/s42484-022-00063-3</arxiv:doi>
+    <link title="doi" href="http://dx.doi.org/10.1007/s42484-022-00063-3" rel="related"/>
     <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">17 pages, 5 figures</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Quantum Mach. Intell. 4, 6 (2022)</arxiv:journal_ref>
     <link href="http://arxiv.org/abs/2011.00904v1" rel="alternate" type="text/html"/>
     <link title="pdf" href="http://arxiv.org/pdf/2011.00904v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>

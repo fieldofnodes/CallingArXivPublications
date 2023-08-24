@@ -95,68 +95,53 @@ struct NoAbstract end
             write(io, data)
         end
     end
+    function date_string()
+        @chain today() begin
+            string(_)
+            replace(_,"-"=>"")
+        end
+    end
+    
+    function make_date_folder_for_data_output()
+        @chain begin
+            date_string()    
+            string("data/",_,"_Publications_From_Arxiv")
+        end
+    end
+
+
+
+
+function grab_latest_arxiv_output_xml_md()
+    output_dir = make_date_folder_for_data_output()
+    if !isdir(output_dir)
+        mkdir(output_dir)
+    end
+
+    file_name_prefix = string(output_dir,"/","kashefi_publications")
+    xml_file = string(file_name_prefix,".xml")
+    md_file = string(file_name_prefix,".md")
+    filter_string = "Elham Kashefi"
+    url = "https://export.arxiv.org/api/query?search_query=au:Kashefi&start=0&sortBy=lastUpdatedDate&&max_results=500"
+    read_url = readchomp(`curl $(url)`)
+    open(xml_file,"w") do io
+        write(io,read_url)
+    end
+
+    xdoc = parse_file(xml_file)
+    xroot = root(xdoc)
+    entries = xroot["entry"]
+
+
+    @chain entries begin
+        xml_entry_to_namedtuple.(_)
+        sort(_, by = x->x.date_pub, rev = true)
+        [tuple_to_markdown(WithAbstract(), i) for i in _] 
+        filter(x-> occursin(filter_string,x),_)
+        append_to_file.(_,md_file)
+    end
+end
 
 // #end
 
-
-url = "https://export.arxiv.org/api/query?search_query=au:Kashefi&start=0&sortBy=lastUpdatedDate&&max_results=500"
-read_url = readchomp(`curl $(url)`)
-open("kashefi.xml","w") do io
-    write(io,read_url)
- end
-
-xdoc = parse_file("kashefi.xml")
-xroot = root(xdoc)
-entries = xroot["entry"]
-
-
-tups = @chain entries begin
-    xml_entry_to_namedtuple.(_)
-    sort(_, by = x->x.date_pub, rev = true)
-    [tuple_to_markdown(WithAbstract(), i) for i in _] 
-    filter(x-> occursin("Elham Kashefi",x),_)
-    append_to_file.(_,"kashefi.md")
-end
-
-
-
-
-function request(
-    keyword::String;
-    field::Field = all_fields,
-    sort_by::SortBy = relevance,
-    sort_order::SortOrder = descending,
-    start::Integer = 0,
-    max_results::Integer = 10,
-    filename::String = "arxiv2bib",
-)
-    
-
-
-
-    search_msg(keyword, field, sort_by, sort_order, max_results)
-    api_call = "http://export.arxiv.org/api/query?search_query=$(n2f[field]):"
-    keyword = replace(keyword, " " => "%20")
-    api_call *= "\"$(keyword)\"&"
-    api_call *= "sortBy=$(sort_by)&"
-    api_call *= "sortOrder=$(sort_order)&"
-    api_call *= "start=$(start)&"
-    api_call *= "max_results=$(max_results)"
-
-    print(api_call)
-
-
-    xml = url2xml(api_call)
-    entries = get_elements_by_tagname(xml, "entry")
-    bibs = extract_bib_info(entries)
-    bibtex(bibs, filename)
-end
-
-
-
-function url2xml(url::String)
-    r = rq(:GET, url)
-    xml_string = parse_string(String(r.body))
-    return root(xml_string)
-end
-
+grab_latest_arxiv_output_xml_md()

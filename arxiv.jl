@@ -6,6 +6,8 @@ using HTTP: request as rq
 using Dates
 using Chain
 
+
+
 struct Authors end
 struct WithAbstract end
 struct NoAbstract end
@@ -125,7 +127,7 @@ struct NoAbstract end
         if !isdir(output_dir)
             mkdir(output_dir)
         end
-
+        destination_file = "content/publications/publications.md"
         file_name_prefix = string(output_dir,"/","publications")
         xml_file = string(file_name_prefix,".xml")
         md_file = string(file_name_prefix,".md")
@@ -148,6 +150,11 @@ struct NoAbstract end
             filter(x-> occursin(filter_string,x),_)
             append_to_file.(_,md_file)
         end
+    
+
+        if isfile(destination_file)
+            cp(md_file,destination_file,force=true)
+        end
     end
 
 // #end
@@ -155,4 +162,6 @@ struct NoAbstract end
 grab_latest_arxiv_output_xml_md()
 
 
+
+ 
 
